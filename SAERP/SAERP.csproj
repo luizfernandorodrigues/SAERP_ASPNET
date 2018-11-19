@@ -144,15 +144,25 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AcessaDados\IUnitOfWork.cs" />
+    <Compile Include="AcessaDados\Repositorio\N01Repositorio.cs" />
+    <Compile Include="AcessaDados\Repositorio\UsuarioRepositorio.cs" />
+    <Compile Include="AcessaDados\UnitOfWork.cs" />
+    <Compile Include="AcessaDados\UnitOfWorkFactory.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\TransporteController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\A03Model.cs" />
+    <Compile Include="Models\AbstractModel.cs" />
+    <Compile Include="Models\FF08Model.cs" />
     <Compile Include="Models\N01Model.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utilitarios\Util.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap-theme.css" />
@@ -197,6 +207,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Triagem\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

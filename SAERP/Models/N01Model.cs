@@ -6,7 +6,7 @@ using System.Web;
 
 namespace SAERP.Models
 {
-    public class N01Model
+    public class N01Model : AbstractModel
     {
         private string a03_ukey;
 
