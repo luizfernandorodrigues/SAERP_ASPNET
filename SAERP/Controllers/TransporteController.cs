@@ -14,6 +14,11 @@ namespace SAERP.Controllers
         {
             return View();
         }
+        [Authorize]
+        public ActionResult Triagem()
+        {
+            return View();
+        }
 
         // GET: Triagem/Details/5
         public ActionResult Details(int id)

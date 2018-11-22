@@ -1,0 +1,17 @@
+﻿@{ 
+    ViewBag.Title = "Libera Veiculos";
+}
+@using (Html.BeginForm("Triagem", "Transporte", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+    <div>
+        <h4>@ViewBag.Title</h4>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            Selecione um Placa:
+            @Html.DropDownList("Placas", String.Empty)
+            <input type="submit" value="Salvar" class="btn btn-primary" />
+        </div>
+    </div>
+}
